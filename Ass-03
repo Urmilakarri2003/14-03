@@ -1,0 +1,9 @@
+#include<stdio.h>
+main()
+{
+int singleNumber(int* nums, int numsSize){
+    int xor = 0x0;
+    while (numsSize--)
+        xor ^= nums[numsSize];
+    return xor;
+}
